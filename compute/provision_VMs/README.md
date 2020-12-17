@@ -5,17 +5,17 @@
 Connect-AzAccount
 ```
 
-##### 2.
+#### 2.
 ```
 Get-AzVm
 ```
 
-##### 3. Create a new resource group `pwshellgr`
+#### 3. Create a new resource group `pwshellgr`
 ```
 New-AzResourceGroup -Name pwshellgr -Location "West Europe"
 ```
 
-##### 4. Create VM
+#### 4. Create VM
 The command will create and run a VM:
 ```
 New-AzVm `
@@ -32,22 +32,22 @@ New-AzVm `
 You will need to provide `user` and `password` for a new VM.
 
 
-##### 5. Get status of VM
+#### 5. Get status of VM (should be `running`)
 ```
 Get-AzVm -Status
 ```
 
-##### 6. Get status of VM
+#### 6. Stop the VM
 ```
 Stop-AzVM -ResourceGroupName "pwshellgr" -Name "aznewvm"
 ```
 
-##### 7. Check a status of VM (should be stopped)
+#### 7. Check a status of VM (should be `deallocated`)
 ```
 Get-AzVm -Status
 ```
 
-##### 8. Remove the resource group (including all resources)
+#### 8. Remove the resource group (including all resources)
 ```
 Remove-AzResourceGroup -Name "pwshellgr"
 ```
