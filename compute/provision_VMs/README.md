@@ -1,5 +1,7 @@
 # Work with VMs
 
+TODO
+
 #### 1. Connect
 ```
 Connect-AzAccount
