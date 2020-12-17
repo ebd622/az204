@@ -1,2 +1,2 @@
-# az204
-Prepare for the AZ-204 exam
+# Practical exercises to prepare for AZ-204
+TODO
