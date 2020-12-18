@@ -198,7 +198,8 @@ Remove-AzResourceGroup -Name "pwshellgr"
 <p>
   
 ```bash
-az vm delete -resource-group cligroup 
+az group delete -n cligroup --yes
+az group delete --name cligroup --yes
 ```
 
 </p>
