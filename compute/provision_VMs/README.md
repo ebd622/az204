@@ -3,6 +3,29 @@
 # Work with VMs
 
 #### 1. Connect
+
+<details><summary>PowerShell</summary>
+<p>
+
+```bash
+Connect-AzAccount
+```
+
+</p>
+</details>
+
+<details><summary>Azure CLI</summary>
+<p>
+
+```bash
+kubectl create namespace mynamespace
+kubectl run nginx --image=nginx --restart=Never -n mynamespace
+```
+
+</p>
+</details>
+
+
 ```
 Connect-AzAccount
 ```
