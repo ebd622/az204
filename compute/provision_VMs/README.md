@@ -2,7 +2,7 @@
 
 # Work with VMs
 
-#### 1. Connect
+#### 1. Connect to Azure with an authenticated account
 
 <details><summary>PowerShell</summary>
 <p>
@@ -30,7 +30,7 @@ kubectl run nginx --image=nginx --restart=Never -n mynamespace
 Connect-AzAccount
 ```
 
-#### 2.
+#### 2. Gets the properties of a virtual machine(s)
 ```
 Get-AzVm
 ```
