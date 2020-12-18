@@ -25,7 +25,7 @@ Connect-AzAccount
 <p>
   
 ```bash
-Connect-AzAccount
+az login
 ```
 
 </p>
