@@ -55,7 +55,7 @@ az vm list -d -o table
 </details>
 
 
-#### 3. Create a new resource group `pwshellgr`
+#### 3. Create a new resource group
 <details><summary>Using PowerShell:</summary>
 <p>
   
@@ -115,21 +115,91 @@ az vm create \
 
 
 #### 5. Get status of VM (should be `running`)
-```
+<details><summary>Using PowerShell:</summary>
+<p>
+  
+```bash
 Get-AzVm -Status
 ```
 
-#### 6. Stop the VM
+</p>
+</details>
+
+<details><summary>Using Azure CLI:</summary>
+<p>
+  
+```bash
+az vm list
+az vm list -d -o table
+az vm list -d -o table --query "[?name=='aznewvm2']"
 ```
+
+</p>
+</details>
+
+
+#### 6. Stop the VM
+<details><summary>Using PowerShell:</summary>
+<p>
+  
+```bash
 Stop-AzVM -ResourceGroupName "pwshellgr" -Name "aznewvm"
 ```
 
-#### 7. Check a status of VM (should be `deallocated`)
+</p>
+</details>
+
+<details><summary>Using Azure CLI:</summary>
+<p>
+  
+```bash
+az vm stop --resource-group cligroup --name aznewvm2
 ```
+
+</p>
+</details>
+
+
+#### 7. Check a status of VM (should be `deallocated`)
+<details><summary>Using PowerShell:</summary>
+<p>
+  
+```bash
 Get-AzVm -Status
 ```
 
-#### 8. Remove the resource group (including all resources)
+</p>
+</details>
+
+<details><summary>Using Azure CLI:</summary>
+<p>
+  
+```bash
+az vm list -d -o table --query "[?name=='aznewvm2']"
 ```
+
+</p>
+</details>
+
+
+#### 8. Remove the resource group (including all resources)
+<details><summary>Using PowerShell:</summary>
+<p>
+  
+```bash
 Remove-AzResourceGroup -Name "pwshellgr"
 ```
+
+</p>
+</details>
+
+<details><summary>Using Azure CLI:</summary>
+<p>
+  
+```bash
+az vm delete -resource-group cligroup 
+```
+
+</p>
+</details>
+
