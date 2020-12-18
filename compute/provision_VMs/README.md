@@ -2,6 +2,12 @@
 
 # Work with VMs
 
+Az PowerShell Module Reference: https://docs.microsoft.com/en-us/powershell/module/?view=azps-5.2.0
+Azure CLI commands: https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az_vm_create
+
+
+
+
 #### 1. Connect to Azure with an authenticated account
 
 <details><summary>Using PowerShell:</summary>
@@ -40,7 +46,7 @@ Get-AzVm
 <p>
   
 ```bash
-todo
+az vm list
 ```
 
 </p>
@@ -48,13 +54,32 @@ todo
 
 
 #### 3. Create a new resource group `pwshellgr`
-```
+<details><summary>Using PowerShell:</summary>
+<p>
+  
+```bash
 New-AzResourceGroup -Name pwshellgr -Location "West Europe"
 ```
 
-#### 4. Create VM
-The command will create and run a VM:
+</p>
+</details>
+
+<details><summary>Using Azure CLI:</summary>
+<p>
+  
+```bash
+az group create --name cligroup --location "West Europe"
 ```
+
+</p>
+</details>
+
+
+#### 4. Create VM
+<details><summary>Using PowerShell:</summary>
+<p>
+  
+```bash
 New-AzVm `
 -ResourceGroupName pwshellgr `
 -Name aznewvm `
@@ -65,8 +90,26 @@ New-AzVm `
 -PublicIpAddressName "mypublicip" `
 -OpenPorts 80,3389
 ```
-
 You will need to provide `user` and `password` for a new VM.
+
+</p>
+</details>
+
+<details><summary>Using Azure CLI:</summary>
+<p>
+  
+```bash
+az vm create \
+--resource-group cligroup \
+--name aznewvm2 \
+--image win2016datacenter \
+--admin-username azadmin \
+--admin-password xxxxxxxx
+```
+
+</p>
+</details>
+
 
 
 #### 5. Get status of VM (should be `running`)
