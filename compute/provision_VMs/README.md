@@ -71,6 +71,7 @@ New-AzResourceGroup -Name pwshellgr -Location "West Europe"
   
 ```bash
 az group create --name cligroup --location "West Europe"
+az group list -o table
 ```
 
 </p>
