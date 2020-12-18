@@ -6,17 +6,21 @@
 
 <details><summary>Using PowerShell:</summary>
 <p>
+  
 ```bash
 Connect-AzAccount
 ```
+
 </p>
 </details>
 
 <details><summary>Using Azure CLI:</summary>
 <p>
+  
 ```bash
 Connect-AzAccount
 ```
+
 </p>
 </details>
 
@@ -24,17 +28,21 @@ Connect-AzAccount
 #### 2. Gets the properties of a virtual machine(s)
 <details><summary>Using PowerShell:</summary>
 <p>
+  
 ```bash
 Get-AzVm
 ```
+
 </p>
 </details>
 
 <details><summary>Using Azure CLI:</summary>
 <p>
+  
 ```bash
 todo
 ```
+
 </p>
 </details>
 
