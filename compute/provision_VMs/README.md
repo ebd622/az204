@@ -4,36 +4,40 @@
 
 #### 1. Connect to Azure with an authenticated account
 
-<details><summary>PowerShell</summary>
+<details><summary>Using PowerShell:</summary>
 <p>
-
 ```bash
 Connect-AzAccount
 ```
-
 </p>
 </details>
 
-<details><summary>Azure CLI</summary>
+<details><summary>Using Azure CLI:</summary>
 <p>
-
 ```bash
-kubectl create namespace mynamespace
-kubectl run nginx --image=nginx --restart=Never -n mynamespace
-```
-
-</p>
-</details>
-
-
-```
 Connect-AzAccount
 ```
+</p>
+</details>
+
 
 #### 2. Gets the properties of a virtual machine(s)
-```
+<details><summary>Using PowerShell:</summary>
+<p>
+```bash
 Get-AzVm
 ```
+</p>
+</details>
+
+<details><summary>Using Azure CLI:</summary>
+<p>
+```bash
+todo
+```
+</p>
+</details>
+
 
 #### 3. Create a new resource group `pwshellgr`
 ```
