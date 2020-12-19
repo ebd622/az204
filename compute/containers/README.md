@@ -42,6 +42,14 @@ docker push ebdregister.azurecr.io/nginx:latest
 ```
 az acr repository list -n ebdregister
 ```
+You can also check an image in the portal:
+
+<img src="../../images/cr3.png" width="80%">
+
+Here you can also see a docker pull command:
+
+<img src="../../images/cr4.png" width="80%">
+
 
 
 
