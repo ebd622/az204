@@ -1,15 +1,11 @@
 (under construction)
-# Azure Container Registry and Azure Container Instance
+# Azure Container Registry (ACR) and Azure Container Instance (ACI)
 
 1. Create Container registry
 
 <img src="../../images/cr1.PNG" width="80%">
 
-This will create a container for you (your company) for images.
-
-<img src="../../images/cr2.png" width="80%">
-
-Username and password(s) will be created (needed to be used later)
+This will create ACR for you (your company) for images.
 
 List all ACRs:
 
@@ -42,6 +38,18 @@ docker push ebdregister.azurecr.io/nginx:latest
 ```
 az acr repository list -n ebdregister
 ```
+You can also check an image in the portal:
+
+<img src="../../images/cr3.png" width="80%">
+
+Here you can also see a docker pull command:
+
+<img src="../../images/cr4.png" width="80%">
+
+
+7. Before deploying to Azure Container Instance (ACI) we need to enable access:
+
+<img src="../../images/cr2.png" width="80%">
 
 
 
