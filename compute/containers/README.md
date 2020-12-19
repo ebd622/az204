@@ -47,7 +47,7 @@ Here you can also see a docker pull command:
 <img src="../../images/cr4.png" width="80%">
 
 
-7. Before deploying to Azure Container Instance (ACI) we need to talke about access:
+7. Before deploying to Azure Container Instance (ACI) we need to enable access:
 
 <img src="../../images/cr2.png" width="80%">
 
