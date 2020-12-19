@@ -8,4 +8,21 @@
 
 This will create a container for you (your company) for images.
 
-2. Publish an image to the Register
+2. Log in to a registry
+
+```
+az acr login --name myregistry
+```
+or
+
+```
+docker login myregistry.azurecr.io
+```
+
+
+
+3. Publish an image to the Register
+
+```
+docker pull ebdregister.azurecr.io/nginx:latest
+```
