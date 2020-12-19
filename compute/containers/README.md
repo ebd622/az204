@@ -5,8 +5,11 @@
 
 <img src="../../images/cr1.PNG" width="80%">
 
-
 This will create a container for you (your company) for images.
+
+<img src="../../images/cr2.PNG" width="80%">
+
+Username and password(s) will be created (needed to be used later)
 
 2. Log in to a registry
 
