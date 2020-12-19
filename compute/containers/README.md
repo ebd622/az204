@@ -51,6 +51,10 @@ Here you can also see a docker pull command:
 
 <img src="../../images/cr2.png" width="80%">
 
+8. Create ACI:
+
+<img src="../../images/cr5.png" width="80%">
+
 
 
 
