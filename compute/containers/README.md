@@ -55,7 +55,17 @@ Here you can also see a docker pull command:
 
 <img src="../../images/cr5.png" width="80%">
 
+9. Check the created container. Note, it is in a "Running" state:
 
+<img src="../../images/cr6.png" width="80%">
+
+Note the IP address of the running instance:
+
+<img src="../../images/cr7.png" width="80%">
+
+10. Make a call to the container from your browser:
+
+<img src="../../images/cr8.png" width="80%">
 
 
 
