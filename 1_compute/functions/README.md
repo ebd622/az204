@@ -1,7 +1,6 @@
-# Develop Azure compute solutions
+# Create a Java function in Azure from the command line
 TODO
 
-Create a Java function in Azure from the command line:
 https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-java?tabs=bash%2Cazure-cli%2Cbrowser
 
 
