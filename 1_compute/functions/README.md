@@ -8,4 +8,33 @@ More details: https://docs.microsoft.com/en-us/azure/azure-functions/functions-r
 ### Create Azure Function from Intellij
 
 #### 1. 
+```
+mvn clean package
+```
+
+#### 2. 
+```
+mvn azure-functions:run
+```
+Check in the output:
+
+```
+Azure Functions Core Tools
+Core Tools Version:       3.0.3160 Commit hash: 00aa7f43cc5c5f15241b5e6e5363256f19ceb990
+Function Runtime Version: 3.0.14916.0
+
+[2020-12-20T19:39:36.014Z] Worker process started and initialized.
+
+Functions:
+
+        HttpExample: [GET,POST] http://localhost:7071/api/HttpExample
+
+For detailed output, run func with --verbose flag.
+```
+
+#### 3. Open in a browser:
+http://localhost:7071/api/HttpExample
+http://localhost:7071/api/HttpExample?name=MyName
+
+
 
