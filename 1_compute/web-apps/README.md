@@ -4,7 +4,7 @@ Details: https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azur
 
 #### 1. Create a web app in the portal 
 
-<img src="../../images/web-app1.PNG" width="80%">
+<img src="../../images/web-app1.png" width="80%">
 
 #### 2. Create a web app in the portal 
 
