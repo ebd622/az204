@@ -6,5 +6,12 @@ Details: https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azur
 
 <img src="../../images/web-app1.png" width="80%">
 
-#### 2. Create a web app in the portal 
+#### 2. Preview a webb app
 
+<img src="../../images/web-app2.png" width="80%">
+
+
+<img src="../../images/web-app3.png" width="80%">
+
+
+<img src="../../images/web-app4.png" width="80%">
