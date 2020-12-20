@@ -34,6 +34,7 @@ For detailed output, run func with --verbose flag.
 
 #### 3. Open in a browser:
 http://localhost:7071/api/HttpExample
+
 http://localhost:7071/api/HttpExample?name=MyName
 
 
