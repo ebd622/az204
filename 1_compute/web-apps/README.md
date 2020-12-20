@@ -43,7 +43,7 @@ curl -v -X POST -u <USER_NAME>:<PASSWORD> https://msleanappservice.scm.azurewebs
 
 #### 5. View the deployed business app in a brawser
 
-<img src="../../images/web-app5.png" width="80%">
+<img src="../../images/web-app5.png" width="50%">
 
 #### 6. Check the deployment in the portal
 
