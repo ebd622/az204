@@ -17,11 +17,14 @@ Open the URL https://msleanappservice.azurewebsites.net/ in your brawser:
 
 #### 4. Deploy your business web-app in the portal
 
-##### 4.1 Clone a git-repo or create a new applications
+##### 4.1 Create and build a new business web-bassed application
 
 ```
 mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
+cd helloworld
+mvn package
 ```
+This will create `helloworld.war` in the target folder.
 
 ##### 4.2 Create deployment credentials
 The easiest way to create deployment credentials is from the Azure CLI. 
