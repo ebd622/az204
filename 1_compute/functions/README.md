@@ -1,7 +1,12 @@
-# Create a Java function in Azure from the command line
-TODO
+(under construction)
+# Implement Azure functions
 
+*Quickstart: Create a Java function in Azure from the command line
 https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-java?tabs=bash%2Cazure-cli%2Cbrowser
+
+*Quickstart: Create an Azure Functions project using IntelliJ IDEA
+https://docs.microsoft.com/en-us/azure/developer/java/toolkit-for-intellij/quickstart-functions
+
 
 
 #### Prerequisites: Install Azure Functions Core Tools
