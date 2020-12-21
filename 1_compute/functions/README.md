@@ -8,6 +8,9 @@ https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli
 * Quickstart: Create an Azure Functions project using IntelliJ IDEA
 https://docs.microsoft.com/en-us/azure/developer/java/toolkit-for-intellij/quickstart-functions
 
+* Durable Functions 
+https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview
+
 
 
 #### Prerequisites: Install Azure Functions Core Tools
