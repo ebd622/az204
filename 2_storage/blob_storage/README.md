@@ -15,5 +15,9 @@ A key strength of AzCopy over the Azure CLI is that all operations run asynchron
 The .NET Storage Client library provides full access to the metadata for a blob, and you can access any properties of a blob. This feature enables you, for example, to select a blob based on its last modified time, creation time, or any other available attribute.
 The .NET Storage Client library implements asynchronous operations, enabling you to take full programmatic advantage of the multitasking capabilities of the .NET Framework.
 
+
+TODO: Create example to manage a storage account with Java 
+
 Resourcses:
 * Work with blobs: https://docs.microsoft.com/en-us/learn/modules/copy-blobs-from-command-line-and-code?WT.mc_id=thomasmaurer-blog-thmaure
+* Quickstart: [Manage blobs with Java v12 SDK](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java?tabs=powershell)
