@@ -1,11 +1,11 @@
 (under construction)
 # Practical exercises to prepare for AZ-204
 
-Develop Azure compute solutions (25-30%)
-Develop for Azure storage (10-15%)
-Implement Azure security (15-20%)
-Monitor, troubleshoot, and optimize Azure solutions (10-15%)
-Connect to and consume Azure services and third-party services (25-30%)
+1. Develop Azure compute solutions (25-30%)
+2. Develop for Azure storage (10-15%)
+3. Implement Azure security (15-20%)
+4. Monitor, troubleshoot, and optimize Azure solutions (10-15%)
+5. Connect to and consume Azure services and third-party services (25-30%)
 
 
 Useful resources:
