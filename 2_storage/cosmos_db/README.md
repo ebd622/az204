@@ -7,5 +7,5 @@ Resourcse:
 * Samples in Git: [azure-cosmos-java-sql-api-samples](https://github.com/Azure-Samples/azure-cosmos-java-sql-api-samples.git)
 * Youtube: [Azure Cosmos DB Tutorial](https://youtu.be/R_Fi59j6BMo)
 
-TODO: creatae examples with pre-trigger and post-trigger
+TODO: creatae examples with pre-trigger and post-trigger (see here https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-use-stored-procedures-triggers-udfs)
 
