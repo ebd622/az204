@@ -7,5 +7,5 @@ Resourcse:
 * Samples in Git: [azure-cosmos-java-sql-api-samples](https://github.com/Azure-Samples/azure-cosmos-java-sql-api-samples.git)
 * Youtube: [Azure Cosmos DB Tutorial](https://youtu.be/R_Fi59j6BMo)
 
-
+TODO: creatae examples with pre-trigger and post-trigger
 
