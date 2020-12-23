@@ -6,7 +6,7 @@ The basic commands to upload and download blobs between blob storage and the loc
 
   Exercise: [Move Azure storage blobs from the command line with the Azure CLI](https://docs.microsoft.com/en-us/learn/modules/copy-blobs-from-command-line-and-code/4-exercise-move-blobs-using-cli)
 
-* **[AzCopy](https://docs.microsoft.com/en-us/learn/modules/copy-blobs-from-command-line-and-code/4-exercise-move-blobs-using-cli)**
+* **[AzCopy](https://docs.microsoft.com/en-us/learn/modules/copy-blobs-from-command-line-and-code/5-move-blobs-using-azcopy)**
 A key strength of AzCopy over the Azure CLI is that all operations run asynchronously, and they're recoverable. The AzCopy command tracks the progress of copy operations, and if an operation fails, it can be restarted close to the point of failure. Additionally, you can tune the performance of the AzCopy command to match the processing power and bandwidth available to your local machine.
 
 * **.NET Storage Client library**
