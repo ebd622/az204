@@ -8,3 +8,4 @@ Rsources:
 * [RBAC](https://docs.microsoft.com/en-us/learn/modules/secure-azure-resources-with-rbac/)
 * KeyVault API
   * Quickstart: [Azure Key Vault Secret client library for Java](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-java)
+  * Azure SDK: [Key Vault - Certificates](https://azuresdkdocs.blob.core.windows.net/$web/java/azure-security-keyvault-certificates/4.1.3/index.html)
