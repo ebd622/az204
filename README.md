@@ -13,3 +13,4 @@ Useful resources:
 * [How to pass AZ-204 in 30 Days!](https://www.thomasmaurer.ch/2020/03/az-204-study-guide-developing-solutions-for-microsoft-azure/)
 * Azure Developer Associate (AZ-204): [Everything You Need to Know](https://k21academy.com/microsoft-azure/az-204/az-204-azure-developer-associate-everything-you-need-to-know/)
 * [Integrating Azure AD into a Java web application](https://docs.microsoft.com/en-us/samples/azure-samples/active-directory-java-webapp-openidconnect/integrating-azure-ad-into-a-java-web-application/) (Git [repo](https://github.com/Azure-Samples/ms-identity-java-webapp/tree/master/))
+* [Azure SDK Latest Releases](https://azure.github.io/azure-sdk/releases/latest/java.html)
