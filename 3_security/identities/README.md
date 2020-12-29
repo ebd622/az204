@@ -6,9 +6,7 @@ Rsources:
 * [Azure Data Factory Tutorial (video)](https://youtu.be/EpDkxTHAhOs)
 
 ### Scenario 1: Store keys in a configuration file
-**Searvice A** connects to **Service B** using a key stored in a configuration file. 
-
-**Service B** also performs an authentication.
+A **Searvice A** connects to a **Service B** using a key stored in a configuration file. A **Service B** also performs an authentication.
 
 <img src="../../images/mi_1.PNG" width="100%">
 
