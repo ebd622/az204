@@ -11,9 +11,10 @@ Searvice A connects to Service B using a key stored in a configuration file
 <img src="../../images/mi_1.PNG" width="80%">
 
 ### Scenario 2: Use Azure AD for authentication accross two services
-
+Azure AD will manage an authentication process. 
 
 <img src="../../images/mi_2.PNG" width="80%">
 
+But we still have a challenge to store identity credentials in a configuration file, the same as in the Scenatio1.
 
 ### Scenario 3: Use IM
