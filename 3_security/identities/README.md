@@ -6,9 +6,13 @@ Rsources:
 * [Azure Data Factory Tutorial (video)](https://youtu.be/EpDkxTHAhOs)
 
 ### Scenario 1: Store keys in a configuration file
-Searvice A connects to Service B using a key stored in a configuration file
+**Searvice A** connects to **Service B** using a key stored in a configuration file. 
+
+**Service B** also performs an authentication.
 
 <img src="../../images/mi_1.PNG" width="100%">
+
+The scenario represents a highest security risk.
 
 ### Scenario 2: Use Azure AD for authentication accross two services
 Azure AD will manage an authentication process. 
