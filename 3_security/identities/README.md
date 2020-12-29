@@ -28,3 +28,17 @@ But we still have a challenge to store identity credentials in a configuration f
 * One click/command to set up with no additional cost;
 * Managed Identity are Service Principals of spacial type
 
+### Supported services
+
+IM can be used with the cervices:
+* VMs
+* App Services
+* API Management
+* Container Instances
+* Container Registry Tasks
+* Event Hubs
+* Functions
+* Kubernetes Services
+* Logic Apps
+* Service Bus
+* Data Factory
