@@ -18,3 +18,11 @@ Azure AD will manage an authentication process.
 But we still have a challenge to store identity credentials in a configuration file, the same as in the Scenatio1.
 
 ### Scenario 3: Use Azure AD Managed Identity
+
+#### Key service characteristic
+
+* Credential are moved out of application code (out of config-files);
+* Identity created and tied with resource lifecycle (i.e. when you delete a resource - an identity will be also deleted);
+* One click/command to set up with no additional cost;
+* Managed Identity are Service Principals of spacial type
+
