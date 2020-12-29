@@ -8,7 +8,7 @@ Rsources:
 ### Scenario 1: Store keys in a configuration file
 Searvice A connects to Service B using a key stored in a configuration file
 
-<img src="../../images/mi_1.PNG" width="90%">
+<img src="../../images/mi_1.PNG" width="100%">
 
 ### Scenario 2: Use Azure AD for authentication accross two services
 Azure AD will manage an authentication process. 
