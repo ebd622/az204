@@ -17,4 +17,4 @@ Azure AD will manage an authentication process.
 
 But we still have a challenge to store identity credentials in a configuration file, the same as in the Scenatio1.
 
-### Scenario 3: Use IM
+### Scenario 3: Use Azure AD Managed Identity
