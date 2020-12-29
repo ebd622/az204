@@ -19,6 +19,8 @@ But we still have a challenge to store identity credentials in a configuration f
 
 ### Scenario 3: Use Azure AD Managed Identity
 
+<img src="../../images/mi_3.PNG" width="80%">
+
 #### Key service characteristic
 
 * Credential are moved out of application code (out of config-files);
