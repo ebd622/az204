@@ -13,6 +13,7 @@ Searvice A connects to Service B using a key stored in a configuration file
 ### Scenario 2: Use Azure AD for authentication accross two services
 
 
+<img src="../../images/mi_2.PNG" width="80%">
 
 
 ### Scenario 3: Use IM
