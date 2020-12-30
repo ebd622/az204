@@ -7,7 +7,7 @@ Rsources:
 * [Azure Identity client library for Java](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/identity/azure-identity)
 
 ### Scenario 1: Store keys in a configuration file
-A **Searvice A** connects to a **Service B** using a key stored in a configuration file. A **Service B** performs validateing a key.
+A **Searvice A** connects to a **Service B** using a key stored in a configuration file. A **Service B** validates a key.
 
 <img src="../../images/mi_1.PNG" width="100%">
 
