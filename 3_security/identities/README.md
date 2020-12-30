@@ -6,6 +6,9 @@ Rsources:
 * [Azure Data Factory Tutorial (video)](https://youtu.be/EpDkxTHAhOs)
 * [Azure Identity client library for Java](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/identity/azure-identity)
 
+Examples:
+* [Use a managed identity to connect Key Vault to an Azure Spring Cloud app](https://docs.microsoft.com/en-us/azure/spring-cloud/spring-cloud-tutorial-managed-identities-key-vault)
+
 ### Scenario 1: Store keys in a configuration file
 A **Searvice A** connects to a **Service B** using a key stored in a configuration file. A **Service B** validates a key.
 
