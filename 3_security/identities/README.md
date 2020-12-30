@@ -45,3 +45,11 @@ IM can be used with the cervices:
 * Logic Apps
 * Service Bus
 * Data Factory
+
+### Local development
+Managed identity is only enables in Azure service, so how can we locally  develop applications? 
+When we run an application on a Local Machine we need to have Azure CLI installed. It will be used instead of Managed Identity Endpoint. 
+
+All SDKs will try to access Managed Identity Endpoint (by default), but if they can not find it - they will use Azure CLI to simulate Managed Identity Endpoint. 
+
+<img src="../../images/mi_4.PNG" width="90%">
