@@ -5,7 +5,7 @@
 2. [Develop for Azure storage (10-15%)](https://github.com/ebd622/az204/tree/main/2_storage)
 3. [Implement Azure security (15-20%)](https://github.com/ebd622/az204/tree/main/3_security)
 4. [Monitor, troubleshoot, and optimize Azure solutions (10-15%)](https://github.com/ebd622/az204/tree/main/4_monitor)
-5. Connect to and consume Azure services and third-party services (25-30%)
+5. [Connect to and consume Azure services and third-party services (25-30%)](https://github.com/ebd622/az204/tree/main/5_services)
 
 
 ### Useful resources:
