@@ -1,6 +1,7 @@
 (under construction)
 # Practical exercises to prepare for AZ-204
 
+### Skills measured:
 1. [Develop Azure compute solutions (25-30%)](https://github.com/ebd622/az204/tree/main/1_compute)
 2. [Develop for Azure storage (10-15%)](https://github.com/ebd622/az204/tree/main/2_storage)
 3. [Implement Azure security (15-20%)](https://github.com/ebd622/az204/tree/main/3_security)
