@@ -18,6 +18,6 @@ The .NET Storage Client library implements asynchronous operations, enabling you
 
 TODO: Create example to manage a storage account with Java 
 
-Resourcses:
+### Resourcses:
 * Work with blobs: https://docs.microsoft.com/en-us/learn/modules/copy-blobs-from-command-line-and-code?WT.mc_id=thomasmaurer-blog-thmaure
 * Quickstart: [Manage blobs with Java v12 SDK](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java?tabs=powershell)
