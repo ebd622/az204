@@ -2,9 +2,9 @@
 
 # Work with VMs
 
-Az PowerShell Module Reference: https://docs.microsoft.com/en-us/powershell/module/?view=azps-5.2.0
-
-Azure CLI commands: https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az_vm_create
+### Resources
+* Az PowerShell Module Reference: https://docs.microsoft.com/en-us/powershell/module/?view=azps-5.2.0
+* Azure CLI commands: https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az_vm_create
 
 
 
