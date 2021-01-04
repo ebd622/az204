@@ -1,5 +1,6 @@
 (under construction)
-# Practical exercises to prepare for AZ-204
+# Prepare for AZ-204
+The repository includes some tips&tricks, exercises and examples to prepare for AZ-204 exam.
 
 ### Skills measured:
 1. [Develop Azure compute solutions (25-30%)](https://github.com/ebd622/az204/tree/main/1_compute)
