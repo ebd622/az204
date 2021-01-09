@@ -1,2 +1,5 @@
+(Under construction)
 # Connect to and consume Azure services and third-party services
-TODO
+
+### Develop message-based solutions
+* [implement solutions that use Azure Service Bus]()
