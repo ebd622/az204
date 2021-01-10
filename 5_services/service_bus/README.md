@@ -44,7 +44,7 @@ This is a dotnet-code example from an exercise for AZ-204 preparation (**private
 ```
 
 
-#### Receive a message
+#### Receive a message from a queue
 This is a dotnet-code example from an exercise for AZ-204 preparation (**privatemessagereceiver**)
 
 ```java
@@ -92,3 +92,10 @@ This is a dotnet-code example from an exercise for AZ-204 preparation (**private
         }
     }
 ```
+
+#### Send a message to a topic
+This is a dotnet-code example from an exercise for AZ-204 preparation (**performancemessagesender**)
+
+
+#### Receive a message from a topic
+This is a dotnet-code example from an exercise for AZ-204 preparation (**performancemessagereceiver**)
