@@ -116,7 +116,7 @@ This is a dotnet-code example from an exercise for AZ-204 preparation (**perform
             try
             {
                 // Create and send a message here
-                string messageBody = $"ebd: Total sales for Brazil in August: $13m.";
+                string messageBody = $"This is a message which will be sent to a topic";
                 var message = new Message(Encoding.UTF8.GetBytes(messageBody));
                 await topicClient.SendAsync(message);
             }
@@ -133,3 +133,53 @@ This is a dotnet-code example from an exercise for AZ-204 preparation (**perform
 
 #### Receive a message from a topic
 This is a dotnet-code example from an exercise for AZ-204 preparation (**performancemessagereceiver**)
+
+```java
+    class Program
+    {
+        const string ServiceBusConnectionString = "Endpoint=sb://...";
+        const string TopicName = "salesperformancemessages";
+        const string SubscriptionName = "Americas";
+        static ISubscriptionClient subscriptionClient;
+
+        static void Main(string[] args)
+        {
+            MainAsync().GetAwaiter().GetResult();
+        }
+
+        static async Task MainAsync()
+        {
+            // 1. Create a Subscription Client here
+            subscriptionClient = new SubscriptionClient(ServiceBusConnectionString, TopicName, SubscriptionName);
+
+            // 2. Register subscription message handler and receive messages in a loop
+            RegisterMessageHandler();
+
+            Console.Read();
+
+            // 3. Close the subscription here
+            await subscriptionClient.CloseAsync();
+        }
+
+        static void RegisterMessageHandler()
+        {
+            var messageHandlerOptions = new MessageHandlerOptions(ExceptionReceivedHandler)
+            {
+                MaxConcurrentCalls = 1,
+                AutoComplete = false
+            };
+            subscriptionClient.RegisterMessageHandler(ProcessMessagesAsync, messageHandlerOptions);
+        }
+
+        static async Task ProcessMessagesAsync(Message message, CancellationToken token)
+        {
+            Console.WriteLine($"Received sale performance message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
+            await subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
+        }
+
+        static Task ExceptionReceivedHandler(ExceptionReceivedEventArgs exceptionReceivedEventArgs)
+        {
+            //Process an exception
+        }  
+    }
+```
