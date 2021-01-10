@@ -5,6 +5,10 @@
 * [Implement message-based communication workflows with Azure Service Bus](https://docs.microsoft.com/en-us/learn/modules/implement-message-workflows-with-service-bus/)
 
 #### Send a message to a queue
+
+
+
+#### Receive a message
 ```java
     class Program
     {
