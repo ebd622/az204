@@ -27,17 +27,17 @@
             // 1. Create a Queue Client here
             queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
 
+            // 2. Receive a message
             RegisterMessageHandler();
         
-            Console.Read();
-
-            // Close the queue here
+            // 3. Close the queue here
             await queueClient.CloseAsync();
 
         }
 
         static void RegisterMessageHandler()
         {
+            // 2.1
             var messageHandlerOptions = new MessageHandlerOptions(ExceptionReceivedHandler)
             {
                 MaxConcurrentCalls = 1,
@@ -48,6 +48,7 @@
 
         static async Task ProcessMessagesAsync(Message message, CancellationToken token)
         {
+            // 2.2
             Console.WriteLine($"Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
             await queueClient.CompleteAsync(message.SystemProperties.LockToken);
         }
