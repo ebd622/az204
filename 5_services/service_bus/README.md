@@ -1,6 +1,6 @@
 (Under construction)
-# Connect to and consume Azure services and third-party services
+# Implement solutions that use Azure Service Bus
 
-### Develop message-based solutions
-* [implement solutions that use Azure Service Bus](https://docs.microsoft.com/en-us/learn/modules/implement-message-workflows-with-service-bus/)
+### Resources
+* [Implement message-based communication workflows with Azure Service Bus](https://docs.microsoft.com/en-us/learn/modules/implement-message-workflows-with-service-bus/)
 
