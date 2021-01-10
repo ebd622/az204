@@ -95,7 +95,41 @@ This is a dotnet-code example from an exercise for AZ-204 preparation (**private
 
 #### Send a message to a topic
 This is a dotnet-code example from an exercise for AZ-204 preparation (**performancemessagesender**)
+```java
+    class Program
+    {
+        const string ServiceBusConnectionString = "Endpoint=sb://...";
+        const string TopicName = "salesperformancemessages";
+        static ITopicClient topicClient;
 
+        static void Main(string[] args)
+        {
+            SendPerformanceMessageAsync().GetAwaiter().GetResult();
+        }
+
+        static async Task SendPerformanceMessageAsync()
+        {
+            // 1. Create a Topic Client here
+            topicClient = new TopicClient(ServiceBusConnectionString, TopicName);
+
+            // 2. Send messages
+            try
+            {
+                // Create and send a message here
+                string messageBody = $"ebd: Total sales for Brazil in August: $13m.";
+                var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+                await topicClient.SendAsync(message);
+            }
+            catch (Exception exception)
+            {
+                //Process an exception
+            }
+
+            // 3. Close the connection to the topic here
+            await topicClient.CloseAsync();
+        }
+    }
+```
 
 #### Receive a message from a topic
 This is a dotnet-code example from an exercise for AZ-204 preparation (**performancemessagereceiver**)
