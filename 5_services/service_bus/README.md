@@ -5,7 +5,7 @@
 * [Implement message-based communication workflows with Azure Service Bus](https://docs.microsoft.com/en-us/learn/modules/implement-message-workflows-with-service-bus/)
 
 #### Send a message to a queue
-This is a dotnet-code example from the exercise for AZ-204 preparation (**privatemessagesender**)
+This is a dotnet-code example from an exercise for AZ-204 preparation (**privatemessagesender**)
 
 ```java
     class Program
@@ -45,7 +45,7 @@ This is a dotnet-code example from the exercise for AZ-204 preparation (**privat
 
 
 #### Receive a message
-This is a dotnet-code example from the exercise for AZ-204 preparation (**privatemessagereceiver**)
+This is a dotnet-code example from an exercise for AZ-204 preparation (**privatemessagereceiver**)
 
 ```java
     class Program
