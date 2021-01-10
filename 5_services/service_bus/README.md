@@ -90,6 +90,11 @@ This is a dotnet-code example from an exercise for AZ-204 preparation (**private
             Console.WriteLine($"Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
             await queueClient.CompleteAsync(message.SystemProperties.LockToken);
         }
+        
+        static Task ExceptionReceivedHandler(ExceptionReceivedEventArgs exceptionReceivedEventArgs)
+        {
+            //Process an exception
+        }   
     }
 ```
 
