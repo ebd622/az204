@@ -1,7 +1,6 @@
 (Under construction)
-# Connect to and consume Azure services and third-party services
+# Implement solutions that use Azure Queue Storage queues
 
-### Develop message-based solutions
-* [implement solutions that use Azure Service Bus](service_bus/)
-* implement solutions that use Azure Queue Storage queues
+### Resources
+* [Communicate between applications with Azure Queue storage](https://docs.microsoft.com/en-us/learn/modules/communicate-between-apps-with-azure-queue-storage/)
 
