@@ -4,6 +4,7 @@
 ### Resources
 * [Implement message-based communication workflows with Azure Service Bus](https://docs.microsoft.com/en-us/learn/modules/implement-message-workflows-with-service-bus/)
 
+The examples below have beed copied from the exercises provided by MS.
 #### 1.1 Send a message to a queue
 This is a dotnet-code example from an exercise for AZ-204 preparation (**privatemessagesender**)
 
