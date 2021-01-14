@@ -7,6 +7,8 @@
 
 #### 1. Create a storage account
 
+<img src="../../images/message_q1.png" width="80%">
+
 
 #### 2. Send a message to a queue
 ```java
