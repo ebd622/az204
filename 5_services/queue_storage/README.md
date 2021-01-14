@@ -9,6 +9,8 @@
 
 <img src="../../images/message_q1.png" width="80%">
 
+<img src="../../images/message_q2.png" width="90%">
+
 
 #### 2. Send a message to a queue
 ```java
