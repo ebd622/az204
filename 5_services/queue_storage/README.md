@@ -4,6 +4,11 @@
 ### Resources
 * [Communicate between applications with Azure Queue storage](https://docs.microsoft.com/en-us/learn/modules/communicate-between-apps-with-azure-queue-storage/)
 
+
+#### 1. Create a storage account
+
+
+#### 2. Send a message to a queue
 ```java
 
     class Program
@@ -42,6 +47,8 @@
     }
 
 ```
+
+#### 3. Recieve (and delete) a message from a queue
 
 ```java
     class Program
