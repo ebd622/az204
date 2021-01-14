@@ -13,7 +13,6 @@
         {
             string value = String.Join(" ", args);
             SendArticleAsync(value).Wait();
-            Console.WriteLine("Hello World!");
         }
 
         static async Task SendArticleAsync(string newsMessage)
@@ -32,6 +31,14 @@
                 CloudQueueMessage articleMessage = new CloudQueueMessage(newsMessage);
                 await queue.AddMessageAsync(articleMessage);
         }
+    }
+
+```
+
+```java
+
+    class Program
+    {
     }
 
 ```
