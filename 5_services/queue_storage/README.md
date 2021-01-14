@@ -60,28 +60,33 @@
         }
         static async Task<string> ReceiveArticleAsync()
         {
-            CloudQueue queue = GetQueue();
+            //1.
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
+            
+            //2.
+            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+            
+            //3.
+            CloudQueue queue = queueClient.GetQueueReference("newsqueue");
+        
             bool exists = await queue.ExistsAsync();
             if (exists)
             {
+                //4.
                 CloudQueueMessage retrievedArticle = await queue.GetMessageAsync();
                 if (retrievedArticle != null)
                 {
                     string newsMessage = retrievedArticle.AsString;
+                    
+                    //5. 
                     await queue.DeleteMessageAsync(retrievedArticle);
+                    
                     Console.WriteLine($"Received {newsMessage}");
                     return newsMessage;
                 }
             }
             Console.WriteLine($"Received nothing");
             return "<queue empty or not created>";
-        }
-
-        static CloudQueue GetQueue()
-        {
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
-            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
-            return queueClient.GetQueueReference("newsqueue");
         }
     }
 ```
