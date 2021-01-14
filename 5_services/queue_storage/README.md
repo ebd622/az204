@@ -60,25 +60,25 @@
         }
         static async Task<string> ReceiveArticleAsync()
         {
-            //1.
+            //1. Get a storage-account
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
             
-            //2.
+            //2. Create a queue client
             CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
             
-            //3.
+            //3. Get a reference to a queue
             CloudQueue queue = queueClient.GetQueueReference("newsqueue");
         
             bool exists = await queue.ExistsAsync();
             if (exists)
             {
-                //4.
+                //4. Get a message-object from a queue
                 CloudQueueMessage retrievedArticle = await queue.GetMessageAsync();
                 if (retrievedArticle != null)
                 {
                     string newsMessage = retrievedArticle.AsString;
                     
-                    //5. 
+                    //5. Delete a message-object from a queue
                     await queue.DeleteMessageAsync(retrievedArticle);
                     
                     Console.WriteLine($"Received {newsMessage}");
