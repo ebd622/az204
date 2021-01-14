@@ -17,18 +17,26 @@
 
         static async Task SendArticleAsync(string newsMessage)
         {
+                //1. Get a storage-account
                 CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
 
+                //2. Create a queue client
                 CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
-
+                
+                //3. Get a reference to a queue
                 CloudQueue queue = queueClient.GetQueueReference("newsqueue");
+                
+                //4. Connect to a queue (or creeate it)                
                 bool createdQueue = await queue.CreateIfNotExistsAsync();
                 if (createdQueue)
                 {
                     Console.WriteLine("The queue of news articles was created.");
                 }
 
+                //5. Create a queue-object
                 CloudQueueMessage articleMessage = new CloudQueueMessage(newsMessage);
+                
+                //6. Add the message-object to a queue
                 await queue.AddMessageAsync(articleMessage);
         }
     }
