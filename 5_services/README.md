@@ -3,5 +3,5 @@
 
 ### Develop message-based solutions
 * [implement solutions that use Azure Service Bus](service_bus/)
-* [implement solutions that use Azure Queue Storage queues](service_bus/)
+* [implement solutions that use Azure Queue Storage queues](queue_storage/)
 
