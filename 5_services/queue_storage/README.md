@@ -7,9 +7,7 @@
 
 #### 1. Create a storage account
 
-<img src="../../images/message_q1.png" width="80%">
-
-<img src="../../images/message_q2.png" width="90%">
+<img src="../../images/message_q1.png" width="90%">
 
 
 #### 2. Send a message to a queue
@@ -51,6 +49,10 @@
     }
 
 ```
+
+After sending messaged to a queue they will be shown in the portal:
+<img src="../../images/message_q2.png" width="90%">
+
 
 #### 3. Recieve (and delete) a message from a queue
 
