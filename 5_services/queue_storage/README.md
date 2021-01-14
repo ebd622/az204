@@ -36,9 +36,37 @@
 ```
 
 ```java
-
     class Program
     {
-    }
+        private const string ConnectionString = "DefaultEndpointsProtocol=https;AccountName=...";
+        static void Main(string[] args)            
+        {
+            ReceiveArticleAsync().Wait();
+        }
+        static async Task<string> ReceiveArticleAsync()
+        {
+            CloudQueue queue = GetQueue();
+            bool exists = await queue.ExistsAsync();
+            if (exists)
+            {
+                CloudQueueMessage retrievedArticle = await queue.GetMessageAsync();
+                if (retrievedArticle != null)
+                {
+                    string newsMessage = retrievedArticle.AsString;
+                    await queue.DeleteMessageAsync(retrievedArticle);
+                    Console.WriteLine($"Received {newsMessage}");
+                    return newsMessage;
+                }
+            }
+            Console.WriteLine($"Received nothing");
+            return "<queue empty or not created>";
+        }
 
+        static CloudQueue GetQueue()
+        {
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
+            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+            return queueClient.GetQueueReference("newsqueue");
+        }
+    }
 ```
