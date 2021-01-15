@@ -9,7 +9,7 @@
 * A single queue can be up to 500 TB in size, so it can potentially store millions of messages. The target throughput for a single queue is 2000 messages per second;
 * Queues let your application scale automatically and immediately when demand changes;
 * A message in a queue is a byte array of up to 64 KB;
-* You access a queue using a REST API: http://<storage account>.queue.core.windows.net/<queue name>
+* You access a queue using a REST API: ```http://<storage account>.queue.core.windows.net/<queue name>```
 
 
 ### Exercise
