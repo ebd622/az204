@@ -5,6 +5,14 @@
 * [Communicate between applications with Azure Queue storage](https://docs.microsoft.com/en-us/learn/modules/communicate-between-apps-with-azure-queue-storage/)
 
 
+### Top points:
+* A single queue can be up to 500 TB in size, so it can potentially store millions of messages. The target throughput for a single queue is 2000 messages per second;
+* Queues let your application scale automatically and immediately when demand changes;
+* A message in a queue is a byte array of up to 64 KB
+
+
+### Exercise
+
 #### 1. Create a storage account
 
 <img src="../../images/message_q1.png" width="90%">
