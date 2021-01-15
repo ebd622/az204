@@ -60,6 +60,7 @@
 ```
 
 After sending messaged to a queue they will be shown in the portal:
+
 <img src="../../images/message_q2.png" width="90%">
 
 
