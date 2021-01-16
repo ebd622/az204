@@ -8,9 +8,9 @@
 To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then configure the Event Hub itself.
 
 #### Events
-- an event is a small packet of information that contains a notification; 
-- events can be published individually, or in batches; 
-- a single publication (individual or batch) can't exceed 1 MB.
+- An event is a small packet of information that contains a notification; 
+- Events can be published individually, or in batches; 
+- A single publication (individual or batch) can't exceed 1 MB.
 
 #### Partitioning
 - Each Event Hub is partitioned;
@@ -19,6 +19,12 @@ To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then
 - When you send messages to e-hub there is no garantie that each partition will be utilized equaly. So, each partition may grow at a different rate:
 
 ![](../../images/event_hub.gif)
+
+- All events in a partition are ordered ```older -> newer ``` (like in a queue);
+- An order is NOT maintened across partitions;
+- If you need to process multiple events in order you need to introduce a *Partition Key*:
+
+
 
 
 #### Namespaces
