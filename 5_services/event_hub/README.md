@@ -33,5 +33,5 @@ To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then
   - Scoping a container;
   - Shared properties
   
-<img src="../../images/ns_1.PNG" width="50%" and height="50%"/>
+<img src="../../images/ns_1.PNG" width="60%" and height="60%"/>
 
