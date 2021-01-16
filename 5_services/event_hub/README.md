@@ -92,6 +92,7 @@ public class Receiver {
     private static final String STORAGE_CONNECTION_STRING = "<AZURE STORAGE CONNECTION STRING>";
     private static final String STORAGE_CONTAINER_NAME = "<AZURE STORAGE CONTAINER NAME>";
 
+    // Partition processor helper
     public static final Consumer<EventContext> PARTITION_PROCESSOR = eventContext -> {
      System.out.printf("Processing event from partition %s with sequence number %d with body: %s %n", 
              eventContext.getPartitionContext().getPartitionId(), eventContext.getEventData().getSequenceNumber(), eventContext.getEventData().getBodyAsString());
@@ -101,6 +102,7 @@ public class Receiver {
         }
     };
 
+    // Error handler helper
     public static final Consumer<ErrorContext> ERROR_HANDLER = errorContext -> {
         System.out.printf("Error occurred in partition processor for partition %s, %s.%n",
             errorContext.getPartitionContext().getPartitionId(),
@@ -108,11 +110,13 @@ public class Receiver {
     };
 
     public static void main(String[] args) throws Exception {
+        // 1. Create a blob container client that you use later to build an event processor client to receive and process events
         BlobContainerAsyncClient blobContainerAsyncClient = new BlobContainerClientBuilder()
             .connectionString(STORAGE_CONNECTION_STRING)
             .containerName(STORAGE_CONTAINER_NAME)
             .buildAsyncClient();
 
+        // 2. Create a builder object that you will use later to build an event processor client to receive and process events and errors.
         EventProcessorClientBuilder eventProcessorClientBuilder = new EventProcessorClientBuilder()
             .connectionString(EH_NAMESPACE_CONNECTION_STRING, eventHubName)
             .consumerGroup(EventHubClientBuilder.DEFAULT_CONSUMER_GROUP_NAME)
@@ -120,14 +124,17 @@ public class Receiver {
             .processError(ERROR_HANDLER)
             .checkpointStore(new BlobCheckpointStore(blobContainerAsyncClient));
 
+        // 3. Use the builder object to create an event processor client 
         EventProcessorClient eventProcessorClient = eventProcessorClientBuilder.buildEventProcessorClient();
 
+        // 4. Start processor
         System.out.println("Starting event processor");
         eventProcessorClient.start();
 
         System.out.println("Press enter to stop.");
         System.in.read();
 
+        // 5. Stop processor
         System.out.println("Stopping event processor");
         eventProcessorClient.stop();
         System.out.println("Event processor stopped.");
