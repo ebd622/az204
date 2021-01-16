@@ -25,6 +25,9 @@ To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then
 - If you need to process multiple events in order you need to introduce a *Partition Key*:
 
 <img src="../../images/event_hub_21.gif" width="60%"/>
+<img src="../../images/event_hub_21.gif" width="250" height="250" />
+
+
 
 
 #### Namespaces
