@@ -6,3 +6,6 @@
 
 To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then configure the Event Hub itself.
 
+![](../../images/event_hub.gif)
+
+
