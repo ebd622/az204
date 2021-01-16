@@ -8,4 +8,5 @@ Azure Event Grid is a fully-managed event routing service.
   For example: Azure Blob, Azure Subscription (when something happened to a subscription) and many other Azure and non Azure services;
 * Topic - the endpoint where publishers send events;
 * Event subscription - the endpoint or built-in mechanism to route events, sometimes to more than one hander;
+* Event handler - the app or service reacting to the event
 
