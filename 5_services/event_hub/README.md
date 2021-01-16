@@ -35,3 +35,11 @@ To deploy Azure Event Hubs, you must configure an **Event Hubs namespace**, and 
   
 <img src="../../images/ns_1.PNG" width="60%" and height="60%"/>
 
+### Java-examplea to send/receive events from Azure Event Hubs
+
+#### Send events
+
+
+#### Receive events
+
+
