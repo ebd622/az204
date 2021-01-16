@@ -10,6 +10,7 @@ To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then
 #### Partitioning
 - Each Event Hub is partitioned;
 - You may have up to 32 patirions (minimum 1);
+- You choose partitions when creating e-hub (no way to change it later on);
 
 ![](../../images/event_hub.gif)
 
