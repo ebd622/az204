@@ -18,13 +18,13 @@ To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then
 - You have to choose partitions when creating e-hub (no way to change it later on);
 - When you send messages to e-hub there is no garantie that each partition will be utilized equaly. So, each partition may grow at a different rate:
 
-<img src="../../images/event_hub.gif" width="80%"/>
+<img src="../../images/event_hub.gif" width="60%"/>
 
 - All events in a partition are ordered ```older -> newer ``` (like in a queue);
 - An order is NOT maintened across partitions;
 - If you need to process multiple events in order you need to introduce a *Partition Key*:
 
-<img src="../../images/event_hub_2.gif" width="80%"/>
+<img src="../../images/event_hub_2.gif" width="50%"/>
 
 
 #### Namespaces
