@@ -2,4 +2,4 @@
 # Develop Azure compute solutions
 TODO
 
-* Implement Azure functions
+* [Implement Azure functions](/functions)
