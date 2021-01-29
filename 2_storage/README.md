@@ -1,6 +1,9 @@
 (under construction)
 # Develop for Azure storage
 
+* Develop solutions that use Cosmos DB storage
+* Develop solutions that use blob storage
+
 ### Types of storage accounts:
 
 * **General-purpose v2 accounts**: Basic storage account type for blobs, files, queues, and tables. Recommended for most scenarios using Azure Storage.
